@@ -1,0 +1,26 @@
+/* 웹 폰트 불러오기 */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* reset */
+a {
+    color: inherit;
+    text-decoration: none;
+
+}
+
+/* common */
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.wrapper {
+    font: 14px "Noto Sans KR" sans-serif;
+}
+
+/* 영어폰트에는 따로 클래스 적용해서 */
+.en {
+    font-family: "Exo 2";
+}
