@@ -17,10 +17,270 @@ a {
 }
 
 .wrapper {
-    font: 14px "Noto Sans KR" sans-serif;
+    font: 14px "Noto Sans KR"sans-serif;
 }
 
 /* 영어폰트에는 따로 클래스 적용해서 */
 .en {
     font-family: "Exo 2";
+}
+
+/* 모바일이 아니면 줄개행을 안함 */
+br.mo {
+    display: none;
+}
+
+/* header 스타일 */
+header {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: rgba(0, 0, 0, 0.2);
+    position: fixed;
+}
+
+header .inner-header {
+    width: 84%;
+    margin: 0 auto;
+}
+
+header .inner-header h1.logo {
+    float: left;
+    width: 200px;
+}
+
+/* 로고 이미지 줄이려면 가로만 원하는 사이즈, 세로는 auto로(부모에게 적용)
+박스 안에 있는 이미지를 가로 100% */
+header .inner-header h1.logo img {
+    width: 100%;
+}
+
+header .inner-header nav.gnb {
+    float: left;
+    margin-left: 80px;
+
+}
+
+header .inner-header nav.gnb li {
+    float: left;
+    margin-right: 80px;
+}
+
+header .inner-header nav.gnb li a {
+    color: #fff;
+    font-size: 16px;
+    display: block;
+
+}
+
+header .inner-header nav.gnb li a:hover {
+    color: #ff8342;
+}
+
+
+header .inner-header nav.tnb {
+    float: right;
+}
+
+header .inner-header nav.tnb li {
+    float: left;
+    margin-right: 25px;
+}
+
+header .inner-header nav.tnb li a {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+header .inner-header nav.tnb li:last-child a {
+    display: block;
+    width: 105px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    line-height: 2px;
+    margin-top: 33px;
+}
+
+header .inner-header nav.tnb li:last-child a:hover {
+    color: #ff8342;
+    background: #fff;
+}
+
+header .inner-header nav.tnb li:first-child a i,
+header .inner-header nav.tnb li:nth-child(2) a i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+header .inner-header nav.tnb li:last-child a i {
+    margin-left: 5px;
+}
+
+/* end header */
+
+
+/* section main 스타일 */
+section.main {
+    background: url('../img/vis_4.jpg') no-repeat center/cover fixed;
+    height: 100vh;
+}
+
+section.main .main-title {
+    /* 박스를 화면 정중앙에 배치 */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    animation: uprising 1s;
+}
+
+@keyframes uprising {
+    0% {
+        top: 60%;
+        opacity: 0;
+    }
+
+    100% {
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+section.main .main-title h2 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+section.main .main-title p {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+section.main .main-title .view {
+    display: block;
+    font-size: 15px;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    width: 180px;
+    padding: 8px 0;
+    margin: 0 auto;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+section.main .main-title .view::after {
+    content: '';
+    width: 0;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    /* background: yellow; */
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+}
+
+section.main .main-title .view:hover::after {
+    width: 100%;
+}
+
+/* section about 스타일 */
+
+section.about {
+    background: #fff;
+    padding: 80px 0;
+
+}
+
+section.about .title {
+    color: #000;
+    text-align: center;
+}
+
+section.about .title h2 {
+    font-size: 45px;
+    margin-bottom: 5px;
+
+}
+
+section.about .title p {
+    font-size: 18px;
+    color: #555;
+}
+
+section.about ul {
+    /* background: tomato; */
+    width: 74%;
+    margin: 30px auto;
+    border-bottom: 1px solid #ddd;
+}
+
+section.about ul li {
+    float: left;
+    width: 33.3333333%;
+}
+
+section.about ul li .img-box {
+
+}
+
+section.about ul li a .img-box {
+    overflow: hidden;
+}
+
+section.about ul li .img-box img {
+    width: 100%;
+    transition: 0.7s;
+}
+
+section.about ul li a:hover .img-box img {
+    transform: scale(1.2);
+}
+
+section.about ul li a .text {
+    padding: 25px;
+
+}
+
+section.about ul li a .text h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+
+section.about ul li a .text p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+section.about ul li a .text p.more {
+    font-weight: 700;
+    /* 일괄대문자 변환 lowercase: 일괄소문자*/
+    text-transform: uppercase;
+    padding-left: 40px;
+    position: relative;
+}
+
+section.about ul li a .text p.more::before {
+    content: '\f30b';
+    font-family: 'Font awesome 5 Free';
+    font-size: 15px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    background: #ff8342;
+    border-radius: 50%;
+    /* display: block;
+    position이나 float 속성을 걸면 자동으로 블록이 됨 */
+    position: absolute;
+    left: 0;
+    top: -6px;
+
 }
