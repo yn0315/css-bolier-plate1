@@ -46,62 +46,47 @@ header {
     position: fixed;
     z-index: 1000;
 }
-
 header .inner-header {
     width: 84%;
     margin: 0 auto;
 }
-
 header .inner-header h1.logo {
     float: left;
     width: 200px;
 }
-
 /* 로고 이미지 줄이려면 가로만 원하는 사이즈, 세로는 auto로(부모에게 적용)
 박스 안에 있는 이미지를 가로 100% */
 header .inner-header h1.logo img {
     width: 100%;
 }
-
 header .inner-header nav.gnb {
     float: left;
     margin-left: 80px;
-
 }
-
 header .inner-header nav.gnb li {
     float: left;
     margin-right: 80px;
 }
-
 header .inner-header nav.gnb li a {
     color: #fff;
     font-size: 16px;
     display: block;
-
 }
-
 header .inner-header nav.gnb li a:hover {
     color: #ff8342;
 }
-
-
 header .inner-header nav.tnb {
     float: right;
 }
-
 header .inner-header nav.tnb li {
     float: left;
     margin-right: 25px;
 }
-
 header .inner-header nav.tnb li a {
     color: #fff;
     font-size: 16px;
     text-align: center;
-
 }
-
 header .inner-header nav.tnb li:last-child a {
     display: block;
     width: 105px;
@@ -111,7 +96,6 @@ header .inner-header nav.tnb li:last-child a {
     line-height: 2;
     margin-top: 33px;
 }
-
 header .inner-header nav.tnb li:last-child a:hover {
     color: #ff8342;
     background: #fff;
@@ -123,20 +107,16 @@ header .inner-header nav.tnb li:nth-child(2) a i {
     margin-right: 8px;
     font-size: 20px;
 }
-
 header .inner-header nav.tnb li:last-child a i {
     margin-left: 5px;
 }
-
 /* end header */
-
 
 /* section main 스타일 */
 section.main {
     background: url('../img/vis_4.jpg') no-repeat center/cover fixed;
     height: 100vh;
 }
-
 section.main .main-title {
     /* 박스를 화면 정중앙에 배치 */
     position: absolute;
@@ -149,7 +129,6 @@ section.main .main-title {
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
     animation: uprising 1s;
 }
-
 @keyframes uprising {
     0% {
         top: 60%;
@@ -161,17 +140,14 @@ section.main .main-title {
         opacity: 1;
     }
 }
-
 section.main .main-title h2 {
     font-size: 55px;
     margin-bottom: 20px;
 }
-
 section.main .main-title p {
     font-size: 25px;
     margin-bottom: 25px;
 }
-
 section.main .main-title .view {
     display: block;
     font-size: 15px;
@@ -207,66 +183,51 @@ section.main .main-title .view:hover::after {
 section.about {
     background: #fff;
     padding: 80px 0;
-
 }
-
 section .title {
     color: #000;
     text-align: center;
 }
-
 section .title h2 {
     font-size: 45px;
     margin-bottom: 5px;
-
 }
-
 section .title p {
     font-size: 18px;
     color: #555;
 }
-
 section.about ul {
     /* background: tomato; */
     width: 74%;
     margin: 30px auto;
     border-bottom: 1px solid #ddd;
 }
-
 section.about ul li {
     float: left;
     width: 33.3333333%;
 }
-
 section.about ul li a .img-box {
     overflow: hidden;
 }
-
 section.about ul li .img-box img {
     width: 100%;
     transition: 0.7s;
 }
-
 section.about ul li a:hover .img-box img {
     transform: scale(1.2);
 }
-
 section.about ul li a .text {
     padding: 25px;
 
 }
-
 section.about ul li a .text h3 {
     font-size: 20px;
     margin-bottom: 10px;
-
 }
-
 section.about ul li a .text p {
     font-size: 16px;
     margin-bottom: 10px;
 }
-
 section.about ul li a .text p.more {
     font-weight: 700;
     /* 일괄대문자 변환 lowercase: 일괄소문자*/
@@ -274,7 +235,6 @@ section.about ul li a .text p.more {
     padding-left: 40px;
     position: relative;
 }
-
 section.about ul li a .text p.more::before {
     content: '\f30b';
     font-family: 'Font awesome 5 Free';
@@ -297,7 +257,6 @@ section.innovation {
     background: #fff;
     margin-bottom: 150px;
 }
-
 section.innovation .img-box {
     width: 74%;
     height: 540px;
@@ -305,7 +264,6 @@ section.innovation .img-box {
     margin: 50px auto 0;
     position: relative;
 }
-
 section.innovation .img-box .inner {
     background: #3a3c4e;
     width: 80%;
@@ -314,126 +272,97 @@ section.innovation .img-box .inner {
     bottom: -50px;
     transform: translateX(-50%);
 }
-
 section.innovation .img-box .inner h3 {
     background: #fff;
     font-size: 18px;
     padding: 25px 45px;
     box-sizing: border-box;
-
 }
-
 section.innovation .img-box .inner .bottom {
     color: #fff;
     font-size: 15px;
     line-height: 1.6;
     padding: 35px 85px;
     box-sizing: border-box;
-
 }
-
 section.innovation .img-box .inner .bottom p {
     float: left;
     width: 70%;
 }
-
 section.innovation .img-box .inner .bottom a {
     float: right;
     background: #ff8342;
     border-radius: 50px;
     padding: 7px 30px;
-    width: 30%;
-}
 
+}
 section.innovation .img-box .inner .bottom a:hover {
     background: #f86010;
-
 }
 
 /* section me 스타일 */
-
 
 section.me {
     background: url(../img/me.jpg) no-repeat center/cover;
     margin-bottom: 150px;
     padding: 80px 0;
 }
-
-
-
 section .list {
     width: 74%;
     margin: 50px auto;
     border-top: 2px solid;
     border-bottom: 2px solid;
-
 }
-
 section .list>li {
     padding: 20px;
 }
-
 section .list>li:first-child {
     border-bottom: 1px solid #ddd;
 }
-
 section .list>li h3 {
     font-size: 18px;
     margin-bottom: 20px;
     position: relative;
 }
-
 section .list>li h3 span {
     color: #ff8342;
     position: absolute;
-    left: -35px;
+    left: -24px;
 }
-
 section .list>li p {
     font-size: 14px;
     line-height: 1.6;
     margin-bottom: 20px;
 }
-
 section .list>li a.more {
     font-size: 16px;
     font-weight: 700;
 }
-
 section .list>li a.more span {
     color: #ff8342;
     margin-left: 3px;
     font-size: 14px;
 }
-
-
-
 section .list li p:first-child {
     font-size: 8px;
     line-height: 1.6;
     padding: 10px 30px;
     float: right;
     width: 80%;
-
 }
-
 section .me ul .in {
     margin-bottom: 30px;
 }
-
-
 section .list li .in em {
     float: left;
     width: 12%;
     font-weight: 700;
 }
-
 section .list li .in p {
     float: left;
     width: 88%;
     position: relative;
 }
-
 section .list li .in p::before {
     content: '';
     width: 4px;
@@ -444,7 +373,6 @@ section .list li .in p::before {
     left: -40px;
     top: 10px;
 }
-
 section #incruit-btn {
     font-size: 16px;
     font-weight: 700;
@@ -467,64 +395,87 @@ section.sns {
     width: 74%;
     margin: 50px auto;
 }
-
-section.sns .title {
-    padding: 50px;
-}
-
 section.sns ul li {
     float: left;
     width: 30%;
-    margin-right: 3%;
-    margin-bottom: 50px;
-    position: relative;
+    margin:50px 1% 50px 1%;
 }
-
 section.sns ul li .img-box {
     height: 250px;
     overflow: hidden;
-    
-}
-
-section.sns ul li .img-box::after {
-    content:'';
-    background: #ff8432;
-    opacity: 0.7;
-    left: 0;
-    top: 0;
-    transition: 0.7s;
-    position: absolute;
-    display: block;
-
-}
-
-section.sns ul li .img-box:hover::after {
-    background: #ff8432;
-    opacity: 0.7;
-    left: 0;
-    top: 0;
-    transition: 0.7s;
+    position: relative;
 }
 section.sns ul li .img-box img {
+    height: 100%;
+}
+section.sns ul li .img-box img::after {
+    content: ('');
+    display: block;
+    height: 250px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.7s;
+}
+section.sns ul li .img-box img:hover::after {
+    background: red;
     width: 100%;
 }
-
-
 section.sns ul li .bottom {
-    padding: 20px;
+    padding: 10px;
 }
-
-section.sns ul li p:first-child {
+section.sns ul .bottom .color {
     color: #ff8342;
+    font-size: 12px;
     margin-bottom: 10px;
-
 }
-
-section.sns ul li p:nth-child(2) {
+section.sns ul .bottom p {
     font-weight: 700;
+    font-size:12px;
     margin-bottom: 20px;
 }
-
-section.sns ul li p:last-child {
+section.sns ul .bottom .time {
     color: gray;
+    font-size: 10px;
+}
+
+/* footer스타일 */
+
+footer {
+    border-top: 1px solid gray;
+}
+footer .inner {
+    width: 80%;
+    margin: 10px auto;
+}
+footer .ft-logo {
+    width: 150px;
+    float: left;
+    margin-right: 30px;
+}
+footer .ft-logo img {
+    width: 100%;
+}
+footer ul {
+    font-size: 11px;
+    margin-top: 20px;
+    float: left;
+}
+footer .address {
+    margin-right:65px;
+}
+
+footer .address li:first-child {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+footer .address .en {
+    color: gray;
+}
+
+footer .list li {
+    float: left;
+    margin:10px 55px 0 0;
 }
